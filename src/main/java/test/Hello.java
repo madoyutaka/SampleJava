@@ -1,7 +1,18 @@
 package test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Hello {
-	public void say() {
-		System.out.println("Hello World!");
+	/*mainメソッド*/
+	public static void main(String[] args)  throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		
+		System.out.println(str);
+		
+		
 	}
 }
